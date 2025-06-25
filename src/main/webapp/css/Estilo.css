@@ -1,0 +1,467 @@
+@charset "UTF-8";
+
+.Nav-Bar {
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;
+    background-color: #1f3db9;
+    padding: 20px 20px;
+    justify-content: space-between;
+    font-family: Arial, sans-serif;
+}
+
+.Nav-Bar .Li-item {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.Nav-Bar .Li-item li {
+    margin-right: 20px;
+}
+
+.Nav-Bar .Li-item li a,
+.Nav-Bar .Login a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    
+}
+
+.Nav-Bar .Li-item li a:hover, 
+.Nav-Bar .Login a:hover{
+    color: #6183a7;
+}
+
+h2{
+	text-align: center;
+}
+
+.FormularioLogin{
+	display: flex;
+	flex-direction:column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 50px;
+	padding: 15px;
+	font-family: Arial, sans-serif;
+	
+}
+
+.FormularioLogin .Form-item{
+	display: flex;
+	margin: 10px;
+	align-items: center;
+	justify-content:space-between;
+	width: 100%;
+	max-width: 200px;
+}
+
+.FormularioLogin .Form-item input{
+	flex: 1;
+	border:1px outset #1c70c8;
+	padding: 10px 10px;
+	
+}
+
+.btnIniciar {
+	flex: 1;
+    width: 100%;
+    max-width: 200px;
+    border: 2px;
+    padding: 10px 10px;
+	
+}
+
+.btnIniciar:hover{
+	background-color: #1c70c8;
+	color: white;
+}
+
+.FormularioLogin a{
+	text-decoration: none;
+	color: #1c70c8;
+}
+
+/* SUB MENU CLIENTE */
+.SubNav {
+    background-color: #2c2c2c; 
+    padding: 15px 0;
+    font-family: Arial, sans-serif;
+}
+
+.SubNav-Items {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+.SubNav-Items li a {
+    text-decoration: none;
+    color: #f0f0f0; 
+    font-weight: bold;
+    padding: 8px 16px;
+    transition: background 0.3s, color 0.3s;
+    border-radius: 5px;
+}
+
+.SubNav-Items li a:hover {
+    background-color: #444;
+    color: #ffffff;
+}
+
+/* CUENTAS */
+.container-cuentas {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+}
+
+.container-cuentas h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.Cuentas {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 1px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.Cuentas-items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.Cuentas-items li{
+	flex: 1 1 30%;
+    padding: 8px 12px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 500;
+    color: #333;
+}
+
+.Cuentas a {
+	display: inline-block;
+	
+    margin-top: 20px;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius:5px;
+}
+
+.Cuentas a:hover{
+	color: #6183a7;
+}
+
+/* MOVIMIENTOS CUENTA */
+
+.Container-movimientos {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto; 
+    text-align: left; 
+    font-family: Arial, sans-serif;
+}
+
+.tabla-movimientos {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px auto;
+    border: 1px solid #ddd;
+}
+
+.tabla-movimientos th, .tabla-movimientos td {
+    padding: 10px;
+    text-align: center;
+    
+}
+
+.tabla-movimientos th {
+    background-color: #f0f0f0;
+    font-weight: bold;
+}
+
+.Container-movimientos .btn-volver{
+	 margin-top: 20px;
+    display: inline-block;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    border: 1px solid #ddd;
+    padding: 8px 16px;
+    border-radius: 5px;
+    
+}
+
+.btn-volver:hover{
+	 color: #fff;
+    background-color: #6183a7;
+    border-color: #6183a7;
+}
+
+.Container-transferencias{
+	text-align: left; 
+    font-family: Arial, sans-serif;
+    display: inline-block;
+    justify-content:left;
+    margin: 10px;
+}
+
+.FormularioTransferencia{
+	text-align: left; 
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content:left;
+    margin: 10px;
+}
+
+.FormularioTransferencia .FormItem{
+	padding: 5px;
+    margin: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.FormularioTransferencia .FormItem label{
+	font-weight: bold;
+	
+}
+
+.FormularioTransferencia .FormItem input, select{
+	border-style: none;
+	border-bottom-style: outset;
+	border-radius: 1px;
+	padding: 7px;
+}
+
+.FormularioTransferencia .btnTransferir {
+	margin-top: 20px;
+    display: inline-block;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    border: 1px solid #ddd;
+    padding: 8px 16px;
+    border-radius: 5px;
+    
+}
+
+.btnTransferir:hover{
+	 color: #fff;
+    background-color: #6183a7;
+    border-color: #6183a7;
+}
+
+
+/* PRESTAMOS */
+
+.Container-Prestamos{
+	display: flex;
+	justify-content: center;
+	text-align: left; 
+    font-family: Arial, sans-serif;
+    margin-top: 20px;
+}
+
+.Container-Prestamo h2{
+	font-weight: bold;
+	padding: 8px 16px;
+}
+
+.Container-Prestamos .Prestamos-Items{
+	padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.Container-Prestamos .Prestamos-Items a{
+	text-decoration: underline;
+	border-radius: 5px;
+	color: #333;
+	transition: background 0.3s, color 0.3s;
+}
+
+.Container-Prestamos .Prestamos-Items a:hover{
+	border-bottom-style: outset;
+	padding: 8px 16px;
+	background-color: #6183a7;
+    border-color: #6183a7;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* MIS PRESTAMOS */
+
+.Container-MisPrestamos {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto; 
+    text-align: left; 
+    font-family: Arial, sans-serif;
+}
+
+.Informacion-Prestamo{
+	
+	border-radius:8px;
+	margin: 20px auto;
+	background-color: #f1f9f6;
+	padding: 15px;
+		
+}
+
+.cabecera-prestamo{
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 1px solid #ccc;
+	paddding-bottom: 8px;
+	font-size: 16px;
+}
+
+.monto-solicitado{
+	text-align: right;
+	margin-top: 10px;
+
+}
+
+.monto-total{
+	font-size: 22px;
+	font-weight: bold;
+}
+
+.cuota{
+	font-size: 14px;
+	color: #333;
+	margin: 3px 0;
+}
+
+.detalle-prestamo {
+	margin-top: 15px;
+	font-size:18px;
+	color: #555;
+	
+}
+
+.fecha-solicitaddo {
+	padding-left: 5px;
+}
+
+.tabla-prestamos {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px auto;
+    border: 1px solid #ddd;
+}
+
+.tabla-prestamos th, .tabla-movimientos td {
+    padding: 7px;
+    text-align: center;
+    
+}
+
+.tabla-prestamos th {
+    background-color: #f0f0f0;
+    font-weight: bold;
+}
+
+/* Solicitar préstamo */
+h2{
+	font-family: Arial, sans-serif;
+}
+.Container-solicitud{
+	text-align: center;
+  	font-family: Arial, sans-serif;
+ 	 margin-top: 20px;
+  	display: flex;
+  	justify-content: center;
+}
+
+
+.Formulario-Prestamos{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-items:center;
+    gap: 10px;
+  	background: #f9f9f9;
+  	padding: 20px;
+ 	border-radius: 8px;
+ 	width: 100%;
+ 	max-width: 500px;
+}
+
+
+
+.Formulario-Prestamos .FormItem{
+	display: flex;
+  	justify-content: space-between;
+ 	align-items: center;
+ 	width: 100%;
+  	gap: 10px;
+}
+
+.Formulario-Prestamos .FormItem label{
+	font-weight: bold;
+ 	min-width: 150px; 
+  	text-align: left;
+	
+}
+
+.Formulario-Prestamos .FormItem input, select{
+	border-style: none;
+	border-bottom-style: outset;
+	border-radius: 1px;
+	padding: 7px;
+}
+
+.Formulario-Prestamos .btnSolicitar {
+	margin-top: 20px;
+    display: inline-block;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    border: 1px solid #ddd;
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s;
+    
+}
+
+.btnSolicitar:hover{
+	color: #fff;
+    background-color: #6183a7;
+    border-color: #6183a7;
+}
+
+.error{
+	color: red;
+	font-family: Arial, sans-serif;
+}
